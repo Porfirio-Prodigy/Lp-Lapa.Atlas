@@ -23,3 +23,7 @@ Landing Page Lapa Atlas.
 ## Tags
 
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+
+## Preview
+
+[Lapa Atlas Preview](https://6517000f2d19700d417fa328--heartfelt-bunny-c3187a.netlify.app/)
