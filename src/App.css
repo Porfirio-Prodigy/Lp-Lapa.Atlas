@@ -1,38 +1,438 @@
-.App {
+
+.header-full {
+  background-image: url('https://www.lapa.ninja/lab/atlas/img/banner-bk.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem 2rem;
+}
+
+.header-container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.header-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 80px;
+}
+
+.get-access {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.main-title {
+  color: #FFF;
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.header-text {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.get-start-container {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.get-start {
+  text-decoration: none;
+  background: #00FFAD;
+  color: #192440;
+  font-weight: 700;
+  padding: 12px 30px;
+  border-radius: 22px;
+}
+
+.get-start:hover {
+  color: #FFF;
+}
+
+.benefit-bar {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefit-bar-benefits {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+.benefit-title {
+  margin:0 0 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.benefit-text {
+  margin: 0 0 1rem;
+  font-size: 14px;
+  font-weight: 300;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.feature {
+  padding: 40px 0;
+  background: linear-gradient(168deg, #ffffff 55%, #00FFAD 0);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.feature.reverse {
+  background: #00FFAD;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.feature-full {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-image {
+  max-width: 480px;
+}
+
+.feature-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.feature-text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #292b2c;
+}
+
+.feature-link {
+  margin: 16px 0;
+  font-weight: 700;
+  text-decoration: none;
+  background: #192440;
+  color: #ffffff;
+  border-radius: 22px;
+  padding: 12px 30px;
+  width: fit-content;
+}
+
+.feature-link:hover {
+  background: #121a2e;
+}
+
+.feature.reverse .feature-full {
+  flex-direction: row-reverse;
+}
+
+.pricing-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 40px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.princing-porpuses {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.pricing-porpuse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 16px 0 8px;
+}
+
+.princing-porpuses .pricing-porpuse:nth-child(even) {
+  background: #192440;
+  border-radius: 4px;
+}
+
+.pricing-title {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.princing-price {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #292b2c;
+}
+
+.princing-porpuses .pricing-porpuse:nth-child(even) .princing-price {
+  color: #FFF;
+}
+
+.princing-price .pricing-price-bold {
+  font-size: 5.5rem;
+  font-weight: 700;
+}
+
+.pricing-benefits {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pricing-link {
+  margin-top: 20px;
+  border: 2px solid #192440;
+  color: #192440;
+  border-radius: 22px;
+  padding: 12px 30px;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: none;
+  transition: .3s ease-in-out;
+}
+
+.princing-porpuses .pricing-porpuse:nth-child(even) .pricing-title,
+.princing-porpuses .pricing-porpuse:nth-child(even) .pricing-benefit{
+  color: #FFF;
+}
+
+.pricing-link:hover {
+  font-size: 12px;
+  background: #192440;
+  color: #FFF;
+  transition: .3s ease-in-out;
+  position: relative;
+  top: -4px;
+}
+
+.princing-porpuses .pricing-porpuse:nth-child(even) .pricing-link {
+  background: #00FFAD;
+}
+
+.princing-porpuses .pricing-porpuse:nth-child(even) .pricing-link:hover {
+  color: #FFF;
+}
+
+.pricing-container > .pricing-title {
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 40px;
+}
+
+.partner-brand {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 4rem 2rem;
+  background: #eceeef;
+}
+
+.footer-full {
+  padding: 64px 0 16px;
+  background-image: url("https://www.lapa.ninja/lab/atlas/img/contact-bk.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.footer-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-form-title {
+  margin: 0 0 0.5rem;
+  font-weight: 700px;
+  font-size: 45px;
+  color: #FFF;
+}
+
+.footer-form-text {
+  font-size: 16px;
+  color: #FFF;
+}
+
+.footer-form-contact {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-form-info {
+  color: #FFF;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-form-fields {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.contact-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-form-field label {
+  color: #00FFAD;
+  font-size: 12px;
+}
+
+.contact-form-field .form-control {
+  background: transparent;
+  border: 1px solid #00FFAD;
+  color: #ffffff;
+
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+textarea.form-control {
+  height: 100px;
+}
+
+.submit-button {
+  background: #00FFAD;
+  color: #192440;
+  font-weight: 700;
+  padding: 12px 30px;
+  border-radius: 22px;
+  border: none;
+  transition: 1.3s;
+}
+
+.submit-button:hover {
+  position: relative;
+  top: -8px;
+  transition: 1.3s;
+}
+
+.footer-developed-by {
+  padding: 100px 0 0;
+}
+
+.developed-by {
+  margin: 0;
+  color: #FFF;
+  text-align: center;
+}
+
+.developed-by a {
+  color: #FFF;
+}
+
+@media (max-width: 950px) {
+  .benefit-bar-benefits {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .princing-porpuses {
+    flex-direction: column;
+  }
+
+  .footer-form {
+    padding: 0 16px;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .feature-image {
+    width: 100%;
+  }
+
+  .partner-brand {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .main-title {
+    font-size: 32px;
+  }
+
+  .benefit-bar {
+    padding: 16px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .feature-title {
+    font-size: 32px;
+  }
+
+  .feature-full {
+    padding: 0 16px;
+  }
+
+  
+  .pricing-container > .pricing-title {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .pricing-porpuse {
+    width: 100vw;
+    padding: 32px 0;
+    box-sizing: border-box;
   }
 }
